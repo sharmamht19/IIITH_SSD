@@ -9,12 +9,12 @@
 
 <script type="text/javascript">
 	function AddNew(){
-		var name=document.getElementById("name").value;
-	   var Roll_no=document.getElementById("Roll_no").value;
-	   var T=document.getElementById("Tb");
-	   var R=T.insertRow(0);
+		var T=document.getElementById("Tb");
+	   var R=T.insertRow(-1);
 	   var c1=R.insertCell(0);
 	   var c2=R.insertCell(1);
+	   var name=document.getElementById("name").value;
+	   var Roll_no=document.getElementById("Roll_no").value;
        c1.innerHTML=Roll_no;
        c2.innerHTML=name;
 	}
@@ -24,19 +24,19 @@
 
 </div>
    <div class="Container">
-   	 <form action="studentRecords.html" >
+   	 <form >
     <input  class="Inp" type="text" id="Roll_no" placeholder="Roll No">
     <input class="Inp"  type="text" id="name" placeholder=" Student Name">
   
-    <button class="ADD_NEW" onclick="AddNew">Add New</button>
+    <button class="ADD_NEW" onclick="AddNew()">Add New</button>
     <table id="Tb">
   <tr>
     <th>Roll No.</th>
     <th>Student Name</th>
   </tr>
 </table>
-   <button class="DEL">Add New</button>
- 
+   <button class="DEL">Delete </button>
+ </form>
 </div>
 <div style="float: right; width: 20%;"> 
 </div>
