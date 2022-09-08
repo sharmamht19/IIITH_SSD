@@ -1,0 +1,58 @@
+#logIn{
+	font-size: 35px;
+	font-style: initial;
+	margin-left: 40%;
+	margin-right: 20%;
+}
+.Container{
+	 border: 1px solid #BFBFBF;
+	margin-top: 10%;
+	margin-right:30%;
+	margin-left: 30%;
+	background-color: white;
+	border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 5px 10px #174B6D;
+
+}
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+button{
+  width: 40%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 19px;
+  border: 2px solid #144409;
+}
+input:hover {
+	
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  border: 2px solid #144409;
+
+}
+button:hover {
+	
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
+  border: 2px solid #144409;
+
+}
+label{
+	margin-left: 10%;
+	font-size: 20px;
+}
+

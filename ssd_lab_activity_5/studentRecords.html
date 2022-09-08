@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Students Records</title>
+	<link rel="stylesheet" href="style2.css">
+
+
+<script type="text/javascript">
+	function AddNew(){
+		var name=document.getElementById("name").value;
+	   var Roll_no=document.getElementById("Roll_no").value;
+	   var T=document.getElementById("Tb");
+	   var R=T.insertRow(0);
+	   var c1=R.insertCell(0);
+	   var c2=R.insertCell(1);
+       c1.innerHTML=Roll_no;
+       c2.innerHTML=name;
+	}
+</script>
+</head><body bgcolor=#D6DBDF><center><h1> student Records</h1></center>
+	 <div style="float: left; width: 20%;">
+
+</div>
+   <div class="Container">
+   	 <form action="studentRecords.html" >
+    <input  class="Inp" type="text" id="Roll_no" placeholder="Roll No">
+    <input class="Inp"  type="text" id="name" placeholder=" Student Name">
+  
+    <button class="ADD_NEW" onclick="AddNew">Add New</button>
+    <table id="Tb">
+  <tr>
+    <th>Roll No.</th>
+    <th>Student Name</th>
+  </tr>
+</table>
+   <button class="DEL">Add New</button>
+ 
+</div>
+<div style="float: right; width: 20%;"> 
+</div>
+</body>
+</html>
