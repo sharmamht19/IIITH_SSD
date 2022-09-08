@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Students Records</title>
-	<link rel="stylesheet" href="style2.css">
-
 
 <script type="text/javascript">
 	function AddNew(){
@@ -17,14 +9,18 @@
 	   var Roll_no=document.getElementById("Roll_no").value;
        c1.innerHTML=Roll_no;
        c2.innerHTML=name;
+
 	}
+
+function Del() {
+  document.getElementById("Tb").deleteRow(-1);
+}
 </script>
 </head><body bgcolor=#D6DBDF><center><h1> student Records</h1></center>
 	 <div style="float: left; width: 20%;">
 
 </div>
    <div class="Container">
-   	 <form >
     <input  class="Inp" type="text" id="Roll_no" placeholder="Roll No">
     <input class="Inp"  type="text" id="name" placeholder=" Student Name">
   
@@ -35,8 +31,7 @@
     <th>Student Name</th>
   </tr>
 </table>
-   <button class="DEL">Delete </button>
- </form>
+   <button class="DEL" onclick="Del()">Delete </button>
 </div>
 <div style="float: right; width: 20%;"> 
 </div>
